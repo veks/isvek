@@ -1,0 +1,112 @@
+//
+// reboot.scss
+// Extended from Bootstrap
+//
+
+// Links
+
+a {
+	text-decoration-color: RGBA(var(--#{$prefix}primary-rgb), var(--#{$prefix}link-underline-opacity, 1)) !important;
+	text-underline-offset: 0.25em !important;
+	--#{$prefix}link-underline-opacity: 0.25;
+
+	&:hover {
+		--#{$prefix}link-underline-opacity: 1;
+	}
+}
+
+.stretched-no-link {
+	position: relative;
+	z-index: 3;
+}
+
+.scroll-top {
+	cursor: pointer;
+	position: fixed !important;
+	bottom: 40px;
+	right: 20px;
+	display: block;
+	z-index: 99;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(50%);
+	transition: $transition-base;
+	background: rgba(var(--#{$prefix}primary-rgb), 0.1);
+	color: $white;
+	border-radius: $border-radius;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+
+	i {
+		font-size: 1.6rem;
+		vertical-align: middle;
+	}
+
+	&:hover {
+		background: $primary;
+		color: $white;
+	}
+
+	&.show {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	overflow-x: hidden;
+	z-index: 0;
+	position: relative;
+}
+
+main {
+	background-color: var(--#{$prefix}body-bg);
+}
+
+header {
+	position: relative;
+	z-index: $zindex-header;
+}
+
+a {
+	transition: $transition-base;
+}
+
+*:focus {
+	outline: none !important;
+}
+
+%heading > a {
+	color: $headings-color;
+
+	&:hover {
+		color: var(--bs-primary);
+	}
+}
+
+video {
+	background-size: cover;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+// Section padding top and bottom
+section {
+	padding-top: ($spacer * 1.5);
+	padding-bottom: ($spacer * 1.5);
+}
+
+@include media-breakpoint-down(md) {
+	section {
+		padding-top: ($spacer * 4);
+		padding-bottom: ($spacer * 3);
+	}
+}
+

@@ -1,0 +1,53 @@
+{
+  "name": "isvek-theme",
+  "version": "1.0.7",
+  "author": "Veks <oleg@isvek.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all --parallel bootstrap-css-build wp-css-build roboto-css-build theme-js-build",
+    "bootstrap-css-build": "npm-run-all --parallel bootstrap-css-compile bootstrap-css-minify",
+    "bootstrap-css-compile": "sass --style expanded --source-map --embed-sources src/scss/bootstrap.scss:assets/css/bootstrap.css",
+    "bootstrap-css-minify": "sass --style compressed --source-map --embed-sources assets/css/bootstrap.css:assets/css/bootstrap.min.css",
+    "bootstrap-css-watch": "nodemon --watch src/scss/ --ext scss --exec \"npm run bootstrap-css-build\"",
+    "wp-css-build": "npm-run-all --parallel wp-css-compile wp-css-minify",
+    "wp-css-compile": "sass --style expanded --source-map --embed-sources src/scss/wp.scss:assets/css/wp.css",
+    "wp-css-minify": "sass --style compressed --source-map --embed-sources assets/css/wp.css:assets/css/wp.min.css",
+    "wp-css-watch": "nodemon --watch src/scss/ --ext scss --exec \"npm run wp-css-build\"",
+    "roboto-css-build": "npm-run-all --parallel roboto-css-compile roboto-css-minify",
+    "roboto-css-compile": "node-sass --style expanded src/scss/roboto.scss assets/css/roboto.css --output-style expanded --source-map true",
+    "roboto-css-minify": "node-sass --include-path scss assets/css/roboto.css assets/css/roboto.min.css --output-style compressed --source-map true",
+    "theme-js-build": "npm-run-all --parallel theme-js-compile theme-js-minify",
+    "theme-js-compile": "rollup --config src/builder/rollup.theme.js --bundleConfigAsCjs",
+    "theme-js-minify": "terser --compress passes=2 --source-map --output assets/js/theme.min.js assets/js/theme.js",
+    "theme-js-watch": "nodemon --watch src/js/ --ext js --exec \"npm run theme-js-compile\"",
+    "npm-check-updates": "npx npm-check-updates",
+    "ncu-updates": "ncu -u",
+    "help": "rollup --help"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "inputmask": "^5.0.9",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4",
+    "npm-check-updates": "^16.14.20",
+    "npm-run-all": "^4.1.5",
+    "postcss-preset-env": "^9.5.15",
+    "rollup": "^4.18.0",
+    "sass": "~1.77.6",
+    "terser": "^5.31.1"
+  },
+  "dependencies": {
+    "core-js": "^3.37.1",
+    "regenerator-runtime": "^0.14.1"
+  }
+}

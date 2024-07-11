@@ -1,0 +1,16 @@
+.search-result {
+  .overflow-auto {
+    max-height: 260px;
+
+    &::-webkit-scrollbar {
+      height: $scrollbar-height;
+      background-color: transparent;
+      opacity: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+		background-color: $scrollbar-bg;
+		@include border-radius($scrollbar-width * .5);
+    }
+  }
+}

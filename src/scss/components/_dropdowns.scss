@@ -1,0 +1,124 @@
+//
+// dropdowns.scss
+// Extended from Bootstrap
+//
+
+//
+// Bootstrap Overrides
+//
+.dropdown-menu {
+	box-shadow: $dropdown-box-shadow;
+}
+
+// dropdown item active
+.dropdown-item.active {
+	color: var(--bs-primary);
+}
+
+// Dropdown arrows
+// Replace original arrows with Custom icons
+//
+.dropdown-toggle {
+	&:after {
+		content: "\f078";
+		font-family: $font-family-fa;
+		font-size: 0.5rem;
+		margin-left: 0.35rem;
+		font-weight: 900;
+		vertical-align: middle;
+		border: none;
+	}
+}
+
+.dropup .dropdown-toggle {
+	&:after {
+		content: "\f077";
+		font-family: $font-family-fa;
+		font-size: 0.7rem;
+		margin-left: 0.35rem;
+		font-weight: 900;
+		vertical-align: middle;
+		border: none;
+	}
+}
+
+// Dropdown overrides for navbar only
+.dropdown-menu .dropdown-toggle {
+	&:after {
+		position: absolute;
+		right: 25px;
+		top: 10px
+	}
+	&:before {
+		position: absolute;
+		right: 25px;
+		top: 10px
+	}
+}
+
+.dropdown-menu.dropdown-animation.show {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	animation-duration: 0.3s;
+	-webkit-animation-duration: 0.3s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: slideIn;
+	animation-name: slideIn;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0rem);
+		opacity: 1;
+	}
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideIn {
+	0% {
+		-webkit-transform: transform;
+		-webkit-opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-webkit-opacity: 1;
+	}
+	0% {
+		-webkit-transform: translateY(1rem);
+		-webkit-opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}

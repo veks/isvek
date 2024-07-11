@@ -1,0 +1,79 @@
+//
+// post.scss
+// Extended from Bootstrap
+//
+
+//
+// Bootstrap Overrides and Additional style for theme
+//
+.page,
+.post {
+	.post-title {
+		word-wrap: break-word !important;
+	}
+
+	.category {
+		&.tag {
+			a {
+				position: relative;
+				z-index: 2;
+			}
+		}
+	}
+
+	.tag {
+		a {
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	.page-content,
+	.post-content {
+		h1 {
+			font-weight: 400;
+			@include font-size($font-size-base * 2);
+		}
+
+		h2 {
+			font-weight: 400;
+			@include font-size($font-size-base * 1.75);
+		}
+
+		h3 {
+			font-weight: 400;
+			@include font-size($font-size-base * 1.5);
+		}
+
+		h4 {
+			font-weight: 400;
+			@include font-size($font-size-base * 1.25);
+		}
+
+		h5 {
+			font-weight: 400;
+			@include font-size($font-size-base * 1.2);
+		}
+
+		h6 {
+			font-weight: 400;
+			@include font-size($font-size-base);
+		}
+
+		figure {
+			max-width: 100%;
+			height: auto;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+

@@ -1,0 +1,148 @@
+//
+// navbar.scss
+// Extended from Bootstrap
+//
+
+//
+// Bootstrap Overrides and Additional style for theme
+//
+
+// navbar toggler
+.navbar-toggler {
+	margin-bottom: 0;
+	border: 0;
+}
+
+.navbar {
+	.navbar-brand {
+		&.navbar-brand-item {
+			img {
+				max-width: 240px;
+				height: auto;
+			}
+		}
+	}
+}
+
+// Navbar dark
+.navbar-dark .navbar-top {
+	span:not(.dropdown-item-text) {
+		color: $white;
+	}
+
+	a:not(.dropdown-item) {
+		color: $white;
+
+		&:hover {
+			color: var(--bs-primary);
+		}
+	}
+}
+
+.navbar-dark .nav .nav-link {
+	color: $white;
+
+	&:hover {
+		color: var(--bs-primary);
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.navbar-dark .navbar-nav .nav-link {
+		color: $dropdown-link-color;
+	}
+}
+
+// Navbar brand (Logo)
+.navbar-brand {
+	padding-top: $navbar-brand-padding-y;
+	padding-bottom: $navbar-brand-padding-y;
+
+	.navbar-brand-item {
+		height: $navbar-brand-height;
+		display: block;
+		width: auto;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.navbar-brand {
+		padding-top: $mobile-navbar-brand-padding-y;
+		padding-bottom: $mobile-navbar-brand-padding-y;
+
+		.navbar-brand-item {
+			height: $mobile-navbar-brand-height;
+		}
+	}
+}
+
+// Toggle plus icon for navbar dropdown submenu only
+.navbar .dropdown-menu .dropdown-submenu.dropend .dropdown-toggle:after {
+	content: "\f00d";
+	font-family: $font-family-fa;
+	font-size: 10px;
+	transform: rotate(45deg);
+	transition: $transition-base;
+	border: none !important;
+	margin: 0;
+}
+
+.navbar .dropdown-menu .dropdown-submenu.dropstart .dropdown-toggle:before {
+	content: "\f00d";
+	font-family: $font-family-fa;
+	font-size: 10px;
+	transform: rotate(45deg);
+	transition: $transition-base;
+	border: none !important;
+	margin: 0;
+	font-weight: 900;
+}
+
+// navbar expand xl
+
+// `.navbar-expand-*` responsive classes for configuring
+// where your navbar collapses.
+.navbar-expand {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		$next: breakpoint-next($breakpoint, $grid-breakpoints);
+		$infix: breakpoint-infix($next, $grid-breakpoints);
+
+		// Styling for navbar-expand
+		&#{$infix} {
+
+			// Navbar styling for navbar expand
+			@include media-breakpoint-up($next) {
+				.navbar-nav {
+					.dropdown-menu {
+						transition: all 0.1s ease-in-out;
+					}
+				}
+				.dropdown-submenu {
+					position: relative;
+				}
+			}
+
+			// Navbar styling for navbar collapse
+			@include media-breakpoint-down($next) {
+				.navbar-nav {
+					.nav-link {
+						padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+					}
+				}
+
+				.dropdown-menu {
+					box-shadow: none !important;
+					border: 0;
+					border-radius: 0;
+					margin-left: $dropdown-padding-y;
+					border-left: 2px solid $dropdown-border-color;
+
+					.dropdown-menu {
+						margin-left: $dropdown-padding-y !important;
+					}
+				}
+			}
+		}
+	}
+}
+

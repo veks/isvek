@@ -1,0 +1,61 @@
+//
+// breadcrumb.scss
+// Extended from Bootstrap
+//
+
+
+//
+// Bootstrap Overrides
+//
+.breadcrumb.breadcrumb-dots {
+	.breadcrumb-item {
+		+ .breadcrumb-item {
+			&::before {
+				content: "вЂў";
+				font-size: 22px;
+				line-height: 0;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.breadcrumb-expand {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		$next: breakpoint-next($breakpoint, $grid-breakpoints);
+		$infix: breakpoint-infix($next, $grid-breakpoints);
+
+		&#{$infix} {
+			@include media-breakpoint-down($infix) {
+				position: relative;
+				width: 100%;
+				display: inline-block;
+				white-space: nowrap;
+				overflow-y: hidden;
+				overflow-x: auto;
+				cursor: auto;
+
+				&::-webkit-scrollbar {
+					cursor: pointer;
+					width: $scrollbar-width;
+					height: $scrollbar-height;
+					background-color: $scrollbar-bg;
+					@include border-radius();
+					opacity: 0;
+				}
+
+				&::-webkit-scrollbar-thumb {
+					background-color: $scrollbar-thumb-bg;
+					@include border-radius();
+					cursor: pointer;
+				}
+
+				.breadcrumb-item {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

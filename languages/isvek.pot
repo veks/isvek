@@ -1,0 +1,414 @@
+# Copyright (C) 2023 Veks
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Isvek 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/isvek\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-09-19T10:04:03+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: isvek\n"
+
+#. Theme Name of the theme
+msgid "Isvek"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://wordpress.isvek.ru/"
+msgstr ""
+
+#. Description of the theme
+msgid "Isvek - быстрая, полностью настраиваемая и красивая тема WordPress, подходящая для блога, личного портфолио, бизнес-сайта."
+msgstr ""
+
+#. Author of the theme
+msgid "Veks"
+msgstr ""
+
+#: 404.php:20
+msgid "Ошибка 404"
+msgstr ""
+
+#: 404.php:26
+msgid "Упс!"
+msgstr ""
+
+#: 404.php:28
+msgid "Страница не найдена."
+msgstr ""
+
+#: 404.php:31
+msgid "Страница, которую вы ищете, не существует."
+msgstr ""
+
+#: 404.php:33
+#: 404.php:34
+msgid "Вернуться на главную страницу"
+msgstr ""
+
+#: comments.php:19
+#: comments.php:81
+msgid "Комментарий"
+msgstr ""
+
+#: comments.php:20
+msgid "Комментария"
+msgstr ""
+
+#: comments.php:21
+msgid "Комментариев"
+msgstr ""
+
+#: comments.php:31
+msgid "Комментарии к записи"
+msgstr ""
+
+#: comments.php:52
+msgid "Комментарии закрыты."
+msgstr ""
+
+#: comments.php:64
+msgid "Имя"
+msgstr ""
+
+#: comments.php:66
+msgid "Сайт"
+msgstr ""
+
+#: comments.php:67
+msgid "Сохранить мое имя, электронную почту и веб-сайт в этом браузере для следующего комментария."
+msgstr ""
+
+#: comments.php:72
+msgid "Отменить ответ"
+msgstr ""
+
+#: comments.php:75
+msgid "Добавить комментарий"
+msgstr ""
+
+#: comments.php:81
+msgid "Введите комментарий"
+msgstr ""
+
+#: inc/Breadcrumb.php:56
+msgid "Навигационная цепочка"
+msgstr ""
+
+#: inc/Breadcrumb.php:62
+msgid "Главная"
+msgstr ""
+
+#: inc/Breadcrumb.php:382
+msgid "Товары с меткой"
+msgstr ""
+
+#: inc/Breadcrumb.php:462
+msgid "Публикации помечены как"
+msgstr ""
+
+#: inc/Breadcrumb.php:481
+#: inc/Breadcrumb.php:485
+msgid "Страница"
+msgstr ""
+
+#: inc/Breadcrumb.php:495
+msgid "Страница не найдена - ошибка 404"
+msgstr ""
+
+#: inc/Breadcrumb.php:504
+msgid "Поиск: "
+msgstr ""
+
+#: inc/Customize/Customize.php:119
+msgid "Настройки темы"
+msgstr ""
+
+#: inc/Customize/Customize.php:120
+msgid "Все возможные настройки"
+msgstr ""
+
+#: inc/Customize/Customize.php:134
+msgid "Настройки шапки"
+msgstr ""
+
+#: inc/Customize/Customize.php:149
+msgid "Настройки контента"
+msgstr ""
+
+#: inc/Customize/Customize.php:164
+msgid "Настройки подвала"
+msgstr ""
+
+#: inc/Customize/Customize.php:188
+msgid "Бренд"
+msgstr ""
+
+#: inc/Customize/Customize.php:193
+#: inc/Customize/Customize.php:319
+#: inc/Customize/Customize.php:349
+msgid "Выключить"
+msgstr ""
+
+#: inc/Customize/Customize.php:194
+#: inc/Customize/Customize.php:320
+#: inc/Customize/Customize.php:350
+msgid "Включить"
+msgstr ""
+
+#: inc/Customize/Customize.php:217
+msgid "Меню"
+msgstr ""
+
+#: inc/Customize/Customize.php:218
+#: inc/Customize/Customize.php:282
+msgid "Выберите мультимедийный запрос, в котором вы хотите отобразить меню."
+msgstr ""
+
+#: inc/Customize/Customize.php:223
+msgid "от - 576px"
+msgstr ""
+
+#: inc/Customize/Customize.php:224
+msgid "от - 768px"
+msgstr ""
+
+#: inc/Customize/Customize.php:225
+msgid "от - 992px"
+msgstr ""
+
+#: inc/Customize/Customize.php:226
+msgid "от - 1200px"
+msgstr ""
+
+#: inc/Customize/Customize.php:227
+msgid "от - 1400px"
+msgstr ""
+
+#: inc/Customize/Customize.php:250
+msgid "Расположение меню"
+msgstr ""
+
+#: inc/Customize/Customize.php:251
+msgid "Выберите расположение меню."
+msgstr ""
+
+#: inc/Customize/Customize.php:256
+msgid "Слева"
+msgstr ""
+
+#: inc/Customize/Customize.php:257
+msgid "Центр"
+msgstr ""
+
+#: inc/Customize/Customize.php:258
+msgid "Справа"
+msgstr ""
+
+#: inc/Customize/Customize.php:281
+msgid "Размещение меню"
+msgstr ""
+
+#: inc/Customize/Customize.php:287
+msgid "Размещает меню слева от области просмотра"
+msgstr ""
+
+#: inc/Customize/Customize.php:288
+msgid "Размещает меню справа от области просмотра"
+msgstr ""
+
+#: inc/Customize/Customize.php:289
+msgid "Помещает меню в верхнюю часть области просмотра"
+msgstr ""
+
+#: inc/Customize/Customize.php:290
+msgid "Помещает меню в нижнюю часть области просмотра"
+msgstr ""
+
+#: inc/Customize/Customize.php:313
+msgid "Отлаживать"
+msgstr ""
+
+#: inc/Customize/Customize.php:314
+msgid "Показывает исходный код js скриптов и css стилей."
+msgstr ""
+
+#: inc/Customize/Customize.php:343
+#: search.php:36
+msgid "Поиск"
+msgstr ""
+
+#: inc/Customize/Customize.php:344
+msgid "Включить или отключить поиск на сайте."
+msgstr ""
+
+#: inc/Customize/Customize.php:373
+msgid "Отзывчивые контейнеры"
+msgstr ""
+
+#: inc/Customize/Customize.php:374
+msgid "Отзывчивые контейнеры позволяют вам указать класс шириной 100%, пока не будет достигнута указанная точка останова, после чего мы применяем max-widths для каждой из более высоких точек останова. Например, .container-sm имеет ширину 100 % для начала до достижения sm точки останова, где она будет масштабироваться с помощью md, lg, xlи xxl."
+msgstr ""
+
+#: inc/Customize/Customize.php:379
+msgid "По умолчанию"
+msgstr ""
+
+#: inc/Customize/Customize.php:380
+msgid "Ширина 100% до небольшой точки останова"
+msgstr ""
+
+#: inc/Customize/Customize.php:381
+msgid "Ширина 100% до средней точки останова"
+msgstr ""
+
+#: inc/Customize/Customize.php:382
+msgid "Ширина 100% до большой точки останова"
+msgstr ""
+
+#: inc/Customize/Customize.php:383
+#: inc/Customize/Customize.php:384
+msgid "Ширина 100% до очень большой точки останова"
+msgstr ""
+
+#: inc/Customize/Customize.php:385
+msgid "Ширина 100% на всю ширину"
+msgstr ""
+
+#: inc/Pagination.php:48
+msgid "Навигация страниц"
+msgstr ""
+
+#: inc/Setup.php:121
+msgid "Панель навигации"
+msgstr ""
+
+#: inc/template-functions.php:292
+msgid "Навигация"
+msgstr ""
+
+#: inc/template-functions.php:376
+msgid "Навигация по комментариям"
+msgstr ""
+
+#: inc/template-functions.php:419
+msgid "Ответить"
+msgstr ""
+
+#: inc/template-functions.php:458
+msgid "Ваш комментарий ожидает модерации"
+msgstr ""
+
+#: inc/template-functions.php:462
+#: template-parts/single/content.php:19
+#: template-parts/single/excerpt-search-content.php:23
+#: template-parts/single/excerpt.php:23
+msgid "Опубликовано"
+msgstr ""
+
+#: inc/template-functions.php:473
+msgid "Редактировать"
+msgstr ""
+
+#: inc/template-functions.php:578
+msgid "Перейти к содержимому"
+msgstr ""
+
+#: inc/Walker/NavMenu.php:308
+#: template-parts/header/navbar.php:20
+msgid "Переключить меню"
+msgstr ""
+
+#: inc/Walker/NavMenu.php:399
+msgid "Добавить меню"
+msgstr ""
+
+#: inc/Widget.php:38
+msgid "Боковая панель слева"
+msgstr ""
+
+#: inc/Widget.php:50
+msgid "Боковая панель справа"
+msgstr ""
+
+#: search.php:43
+msgid "По вашему запросу"
+msgstr ""
+
+#: search.php:44
+msgid "найден,найдена,найдено"
+msgstr ""
+
+#: search.php:46
+msgid "результат,результата,результатов"
+msgstr ""
+
+#: search.php:95
+msgid "По запросу"
+msgstr ""
+
+#: search.php:97
+msgid "ничего не найдено"
+msgstr ""
+
+#: search.php:103
+msgid "Убедитесь, что все слова написаны без ошибок"
+msgstr ""
+
+#: search.php:104
+msgid "Попробуйте использовать другие ключевые слова"
+msgstr ""
+
+#: searchform.php:25
+msgid "Введите запрос"
+msgstr ""
+
+#: template-parts/footer/notices-cookies.php:5
+msgid "Веб-сайт использует файлы cookie"
+msgstr ""
+
+#: template-parts/footer/notices-cookies.php:9
+msgid "Этот сайт использует «cookies». Также сайт использует интернет-сервис для сбора технических данных касательно посетителей с целью получения статистической информации."
+msgstr ""
+
+#: template-parts/footer/notices-cookies.php:10
+msgid "Ознакомьтесь с нашей"
+msgstr ""
+
+#: template-parts/footer/notices-cookies.php:12
+msgid "Политикой конфиденциальности"
+msgstr ""
+
+#: template-parts/footer/notices-cookies.php:17
+msgid "Согласие cookie о политики обработки персональных данных"
+msgstr ""
+
+#: template-parts/footer/notices-cookies.php:19
+msgid "Согласен"
+msgstr ""
+
+#: template-parts/footer/scroll-top.php:5
+msgid "Вверх"
+msgstr ""
+
+#: template-parts/header/navbar.php:24
+msgid "Закрыть меню"
+msgstr ""
+
+#: template-parts/page/excerpt-search-content.php:93
+#: template-parts/page/excerpt-search-content.php:96
+#: template-parts/single/excerpt-search-content.php:88
+#: template-parts/single/excerpt-search-content.php:91
+#: template-parts/single/excerpt.php:63
+#: template-parts/single/excerpt.php:64
+msgid "Подробнее"
+msgstr ""
+
+#: template-parts/single/excerpt-search-content.php:34
+msgid "Автор"
+msgstr ""

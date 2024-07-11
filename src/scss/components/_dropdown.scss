@@ -1,0 +1,160 @@
+//
+// dropdowns.scss
+// Extended from Bootstrap
+//
+
+.dropdown-menu {
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 1100;
+	box-shadow: $box-shadow;
+
+	.dropdown-toggle {
+		&:after {
+			position: absolute;
+			right: 1rem;
+		}
+
+		&:before {
+			position: absolute;
+			right: 1rem;
+		}
+	}
+}
+
+.dropdown-item {
+	font-weight: $font-weight-medium;
+	border-radius: $border-radius;
+	margin-bottom: .1rem;
+	transition: $transition-base;
+}
+
+.dropdown-item.active, .dropdown-item:active,
+.dropdown-item:hover, .dropdown-item:focus {
+	border-radius: $border-radius;
+}
+
+//Dropdown custom icon
+.dropdown .dropdown-toggle:after {
+	content: "\f107";
+	font-family: $font-family-fa;
+	font-weight: 900;
+	vertical-align: middle;
+	border: none;
+	@include font-size($font-size-xs);
+}
+
+//Dropup custom icon
+.dropup .dropdown-toggle:after {
+	content: "\f106";
+	font-family: $font-family-fa;
+	font-weight: 900;
+	vertical-align: middle;
+	border: none;
+	@include font-size($font-size-xs);
+}
+
+//Dropstart custom icon
+.dropstart .dropdown-toggle:before {
+	content: "\f104";
+	font-family: $font-family-fa;
+	font-weight: 900;
+	vertical-align: middle;
+	border: none;
+	@include font-size($font-size-xs);
+}
+
+.dropdown-menu .dropstart .dropdown-toggle:before {
+	content: "\f105";
+	margin-right: 0;
+}
+
+//Dropend custom icon
+.dropend .dropdown-toggle:after {
+	content: "\f105";
+	font-family: $font-family-fa;
+	font-weight: 900;
+	vertical-align: middle;
+	border: none;
+	@include font-size($font-size-xs);
+}
+
+// dropdown menu start end position
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		.dropdown-menu#{$infix}-start {
+			left: 0;
+		}
+		.dropdown-menu#{$infix}-end {
+			right: 0;
+		}
+	}
+}
+
+.dropdown-menu.dropdown-animation.show {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	animation-duration: 0.3s;
+	-webkit-animation-duration: 0.3s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-name: slideIn;
+	animation-name: slideIn;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0rem);
+		opacity: 1;
+	}
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideIn {
+	0% {
+		-webkit-transform: transform;
+		-webkit-opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		-webkit-opacity: 1;
+	}
+	0% {
+		-webkit-transform: translateY(1rem);
+		-webkit-opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}

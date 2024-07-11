@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../src/scss/wp.scss"],"names":[],"mappings":"AAAA;EACC;;;AAGD;EACC;;;AAGD;EACC;;;AAGD;EACC","file":"wp.css","sourcesContent":[".textwidget {\n\tpadding: 10px;\n}\n\n.text_widget {\n\tpadding: 10px;\n}\n\n.text-widget {\n\tpadding: 10px;\n}\n\n.wp-block-button__link {\n\ttext-decoration: none !important;\n}\n"]}

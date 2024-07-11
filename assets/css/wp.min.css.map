@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["wp.css"],"names":[],"mappings":"AAAA,YACE,aAGF,aACE,aAGF,aACE,aAGF,uBACE","file":"wp.min.css","sourcesContent":[".textwidget {\n  padding: 10px;\n}\n\n.text_widget {\n  padding: 10px;\n}\n\n.text-widget {\n  padding: 10px;\n}\n\n.wp-block-button__link {\n  text-decoration: none !important;\n}\n\n/*# sourceMappingURL=wp.css.map */\n"]}
